@@ -1,6 +1,69 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
     box-sizing: border-box;
+    /* background: linear-gradient(to top left, rgba(82, 82, 141, 0.8), rgba(130, 210, 224, 0.8));
+    color: rgb(245, 236, 236); */
+    background: linear-gradient(to top left, rgb(109, 101, 101), rgb(238, 237, 237))
 }
 
+.game {
+    margin: 5rem auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(107, 107, 107);
+    border-radius: 20px;
+    box-shadow: 0 0 100px 0 rgb(190, 190, 190);
+    background: linear-gradient(to top left, rgba(82, 82, 141, 0.8), rgba(130, 210, 224, 0.8));
+    color: rgb(245, 236, 236);
+}
+
+.header {
+    font-size: 56px;
+}
+
+.btns {
+    margin: 2rem;
+}
+
+button:hover {
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 3px 5px 0 rgb(216, 215, 215);
+    border: none;
+    transform: scale(1.1);
+}
+
+.pick-choice {
+    font-size: 35px;
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 20px;
+    margin: 0 0.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 0;
+}
+
+.choices {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.myChoice, .computersChoice {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.winner {
+    font-size: 48px;
+    margin-top: 5rem;
+}

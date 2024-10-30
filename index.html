@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +8,41 @@
     <script src="./script.js" defer></script>
     <title>Sten, Sax & Påse</title>
 </head>
+
 <body>
-    <h1>Mitt första spel!</h1>
+    <section class="game">
+        <h1 class="header">Mitt första spel!<br>
+            (sten, sax, påse)
+        </h1>
 
-    <h2>Välj ditt drag!</h2>
+        <h2 class="pick-choice">Välj ditt drag!</h2>
 
-    <section class="btn">
-        <button id="sten">Sten</button>
-    <button id="sax">Sax</button>
-    <button id="pase">Påse</button>
+        <div class="btns">
+            <button id="sten">Sten</button>
+            <button id="sax">Sax</button>
+            <button id="pase">Påse</button>
+        </div>
+
+
+        <section class="choices">
+            <div class="myChoice">
+                <h3>Ditt drag:</h3>
+                <p id="myMove"></p>
+            </div>
+        
+            <div class="computersChoice">
+                <h3>Datorns drag:</h3>
+                <p id="computersMove"></p>
+            </div>
+        </section>
+        
+
+        <p class="winner" id="winner"></p>
     </section>
-    
 
-
-    <div class="myChoice">
-        <h3>Ditt drag!</h3>
-        <p id="myMove"></p>
-
-    </div>
-
-    <div class="computersChoice">
-        <h3>Datorns drag!</h3>
-        <p id="computersMove"></p>
-    </div>
-    
-    <p id="winner"></p>
 
 
     <!-- <button id="btn">Kör</button> -->
 </body>
+
 </html>
