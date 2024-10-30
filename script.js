@@ -5,31 +5,41 @@ const saxKnapp = document.getElementById("sax");
 const paseKnapp = document.getElementById("pase");
 
 const computerAlternative = ["Sten!", "Sax!", "Påse!"];
+let myChoice;
+
+// Datorns val av drag - randomizar mellan de olika alternativen - math.random raden.
 
 
 stenKnapp.addEventListener("click", stenen);
 function stenen() {
-    document.getElementById("myMove").innerHTML = "Sten!";
+    myChoice = document.getElementById("myMove").innerHTML = "Sten!";
     let computerChoice = computerAlternative[Math.floor(Math.random() * computerAlternative.length)];
-    console.log(computerChoice);
+    console.log("Mitt val: " + myChoice);
+    console.log("Datorns val: " + computerChoice);
 }
 
 
 saxKnapp.addEventListener("click", saxen);
 function saxen() {
-   document.getElementById("myMove").innerHTML = "Sax!"; 
+   myChoice = document.getElementById("myMove").innerHTML = "Sax!"; 
    let computerChoice = computerAlternative[Math.floor(Math.random() * computerAlternative.length)];
-    console.log(computerChoice);
+   console.log("Mitt val: " + myChoice); 
+   console.log("Datorns val: " + computerChoice);
 }
     
 
 paseKnapp.addEventListener("click", pasen);
 function pasen() {
-    document.getElementById("myMove").innerHTML = "Påse!";
+    myChoice = document.getElementById("myMove").innerHTML = "Påse!";
     let computerChoice = computerAlternative[Math.floor(Math.random() * computerAlternative.length)];
-    console.log(computerChoice);
+    console.log("Mitt val: " + myChoice);
+    console.log("Datorns val: " + computerChoice);
 }
 
-// Datorns val drag - randomizar mellan de olika alternativen.
+
+// funktion som utger vinnaren...
 
 
+// let whoIsTheWinner = function winner() {
+//     if ()
+// }
